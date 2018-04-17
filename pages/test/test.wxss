@@ -1,0 +1,13 @@
+/* pages/test/test.wxss */
+.weui-btn {
+  margin-top: 15px;
+}
+.myMap{
+  margin-top : 45px
+}
+
+.button-sp-area{
+  margin:0 auto;
+  padding-top:15px;
+  width:60%;
+}

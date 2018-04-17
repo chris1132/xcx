@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/test/test",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroudColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/icon/logo.png",
+        "selectedIconPath":"pages/icon/logo.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "iconPath": "pages/icon/logo.png",
+        "selectedIconPath": "pages/icon/logo.png",
+        "text": "吃什么?"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "pages/icon/logo.png",
+        "selectedIconPath": "pages/icon/logo.png",
+        "text": "日志"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "backgroundColorBottom":"#C2C2C2",
+    "enablePullDownRefresh":true
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
