@@ -5,9 +5,22 @@
 .myMap{
   margin-top : 45px
 }
+.container{
 
+}
+.textcontent{
+  color: #aaa;
+  align-items: center;
+}
 .button-sp-area{
   margin:0 auto;
   padding-top:15px;
   width:60%;
 }
+.weui-form-preview {
+  margin-bottom:25px;
+}
+.weui-form-preview {
+  background-color:#fff;
+}
+

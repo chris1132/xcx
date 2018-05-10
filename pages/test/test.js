@@ -2,21 +2,28 @@ Page({
   data : {
     value : ['a','b','c','d'],
     height: 20,
-    focus: false
+    focus: false,
+    hiddenmodalput: true,
+    restaurants: "美食堂 五芳斋 四方缘"
   },
   openAlert: function () {
-    var time = this.getTime();
-    var storage = wx.getStorageSync(time); 
-    console.log(storage);
-    if (storage){
-      this.showModal("已经决定了！ "+storage);
-    }else{
-      var restaurants = ['美食堂', '五芳斋', '四方缘'];
-      var index = Math.round(Math.random() * 2);
-      var content = '今天吃' + restaurants[index];
-      this.showModal(content);
-      wx.setStorageSync(time, content);
-    }
+
+    var restaurantsAry = this.data.restaurants.split(" ");
+    var index = Math.round(Math.random() * 2);
+    var content = '今天吃' + restaurantsAry[index];
+    this.showModal(content);
+    // var time = this.getTime();
+    // var storage = wx.getStorageSync(time); 
+    // if (storage){
+    //   this.showModal("已经决定了！ "+storage);
+    // }else{
+    //   var restaurantsAry = this.data.restaurants.split(" ");
+    //   console.log(restaurantsAry.length);
+    //   var index = Math.round(Math.random() * 2);
+    //   var content = '今天吃' + restaurantsAry[index];
+    //   this.showModal(content);
+    //   wx.setStorageSync(time, content);
+    // }
   },
   showModal:function(content){
     wx.showModal({
@@ -47,17 +54,27 @@ Page({
     // 使用 wx.createMapContext 获取 map 上下文
     this.mapCtx = wx.createMapContext('myMap')
   },
-
-  bindButtonTap: function () {
+  modalinput: function () {
     this.setData({
-      focus: true
+      hiddenmodalput: !this.data.hiddenmodalput
     })
   },
-  bindTextAreaBlur: function (e) {
-    console.log(e.detail.value)
+  //取消按钮  
+  cancel: function () {
+    this.setData({
+      hiddenmodalput: true
+    });
   },
-  bindFormSubmit: function (e) {
-    console.log(e.detail.value.textarea)
-  }
+  //确认  
+  confirm: function () {
+    this.setData({
+      hiddenmodalput: true
+    });
+  },
+  textInputEvent: function(e){
+    this.setData({
+      restaurants : e.detail.value
+    })
+  }  
 
 });

@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/suggestion/suggestion",
     "pages/index/index",
-    "pages/test/test",
-    "pages/logs/logs"
+    "pages/test/test"
   ],
   "tabBar": {
     "color": "#dddddd",
@@ -20,13 +20,13 @@
         "pagePath": "pages/test/test",
         "iconPath": "pages/icon/logo.png",
         "selectedIconPath": "pages/icon/logo.png",
-        "text": "吃什么?"
+        "text": "日杂工具"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/suggestion/suggestion",
         "iconPath": "pages/icon/logo.png",
         "selectedIconPath": "pages/icon/logo.png",
-        "text": "日志"
+        "text": "地图"
       }
     ]
   },
