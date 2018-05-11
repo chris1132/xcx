@@ -1,7 +1,8 @@
 {
   "pages":[
+        "pages/index/index",
     "pages/suggestion/suggestion",
-    "pages/index/index",
+
     "pages/test/test"
   ],
   "tabBar": {
