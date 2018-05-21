@@ -1,0 +1,109 @@
+<view class="htest_1" >
+          <view class="htest_6" >
+               <view class="htest_7" >
+                    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+                    <block wx:else>
+                      <image bindtap='bindViewTap' src="{{userInfo.avatarUrl}}" style=" width:114rpx;height:114rpx;"  border="0"  class="htest_8" ></image>
+                      <text class="htest_9" >{{userInfo.nickName}}</text>
+                      <text class="htest_10" >积分:1000</text>
+                      <!-- <text class="htest_11" >V2</text> -->
+                    </block>
+               </view>
+          </view>
+          <view class="htest_12" >
+               <view class="htest_13" >
+                    <view class="htest_14" >
+                         <image src="../icon/self_center/htest_15_15.jpg" style=" width:51rpx;height:51rpx;"  border="0"  class="htest_15" ></image>
+                         <text class="htest_16" >每日签到</text>
+                    </view>
+               </view>
+               <view class="htest_13" >
+                    <view class="htest_14" >
+                         <image src="../icon/self_center/htest_19_19.jpg" style=" width:51rpx;height:51rpx;"  border="0"  class="htest_15" ></image>
+                         <text class="htest_16" >邀请好友</text>
+                    </view>
+               </view>
+               <view class="htest_13" >
+                    <view class="htest_14" >
+                         <image src="../icon/self_center/htest_23_23.jpg" style=" width:51rpx;height:51rpx;"  border="0"   class="htest_15" ></image>
+                         <text class="htest_16" >积分公益</text>
+                    </view>
+               </view>
+          </view>
+          <view class="htest_29" >
+               <view class="htest_30" >
+                    <view class="htest_31" >
+                         <image src="../icon/self_center/htest_32_32.jpg" style=" width:80rpx;height:80rpx;"  border="0"  class="htest_32" ></image>
+                         <text class="htest_33" >卡内余额</text>
+                         <text class="htest_34" >11266</text>
+                    </view>
+               </view>
+               <view class="htest_45" >
+                    <view class="htest_46" >
+                         <image src="../icon/self_center/htest_47_47.jpg" style=" width:80rpx;height:80rpx;"  border="0"  class="htest_47" ></image>
+                         <text class="htest_48" >优惠券</text>
+                         <text class="htest_49" >1个优惠券活动正在进行中</text>
+                    </view>
+               </view>
+               <view class="htest_55" >
+                    <view class="htest_56" bindtap='gotoShop'>
+                         <image src="../icon/self_center/htest_57_57.jpg" style=" width:94rpx;height:80rpx;"  border="0"   class="htest_57" ></image>
+                         <text class="htest_58" >线上商城</text>
+                         <text class="htest_59" >坐车不怕没喝的</text>
+                    </view>
+               </view>
+               <view class="htest_35" >
+                    <view class="htest_36" >
+                         <image src="../icon/self_center/htest_37_37.jpg" style=" width:80rpx;height:80rpx;"  border="0"   class="htest_37" ></image>
+                         <text class="htest_38" >积分抽奖</text>
+                         <text class="htest_39" >平时人品这么好，来试试呀</text>
+                    </view>
+               </view>
+               <view class="htest_40" >
+                    <view class="htest_41" >
+                         <image src="../icon/self_center/htest_42_42.jpg" style=" width:80rpx;height:80rpx;"  border="0"  class="htest_42" ></image>
+                         <text class="htest_43" >城会玩</text>
+                         <text class="htest_44" >商家活动想怎么玩就怎么玩</text>
+                    </view>
+               </view>
+               <view class="htest_50" >
+                    <view class="htest_51" >
+                         <image src="../icon/self_center/htest_52_52.jpg" style=" width:80rpx;height:80rpx;"  border="0"  class="htest_52" ></image>
+                         <text class="htest_53" >公交圈</text>
+                         <text class="htest_54" >疑难琐事，大家出主意</text>
+                    </view>
+               </view>
+          </view>
+
+        <view class="wo_1" >
+          <scroll-view scroll-y class="wo_2" >
+              <view class="wo_43" >
+                    <view class="wo_56" >
+                         <view class="wo_66" >
+                              <view class="wo_76" >
+                                   <image src="../icon/self_center/wo_83_83.png" style=" width:55rpx;height:49rpx;"  border="0"   bindtap="wo_86_click"  class="wo_86" ></image>
+                                   <text class="wo_96" >我的订单</text>
+                              </view>
+                              <image src="../icon/self_center/wo_103_103.png" style=" width:18rpx;height:29rpx;"  border="0"   bindtap="wo_106_click"  class="wo_106" ></image>
+                         </view>
+                    </view>
+                    <view class="wo_56" >
+                         <view class="wo_66" >
+                              <view class="wo_76" >
+                                   <image src="../icon/self_center/wo_86_86.png" style=" width:55rpx;height:49rpx;"  border="0"   bindtap="wo_86_click"  class="wo_86" ></image>
+                                   <text class="wo_96" >我的预约</text>
+                              </view>
+                              <image src="../icon/self_center/wo_103_103.png" style=" width:18rpx;height:29rpx;"  border="0"   bindtap="wo_106_click"  class="wo_106" ></image>
+                         </view>
+                    </view>
+              </view>
+          </scroll-view>
+        </view>
+</view>
+
+
+
+
+
+
+

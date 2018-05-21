@@ -1,43 +1,54 @@
 {
-  "pages":[
-        "pages/index/index",
-    "pages/suggestion/suggestion",
-
-    "pages/test/test"
+  "pages": [
+    "pages/custom_made/custom_made",
+    "pages/ride_assistance/ride_assistance",
+    "pages/electronic_card/electronic_card",
+    "pages/self_center/self_center",
+    "pages/custom_made/select_address/select_address",
+    "pages/custom_made/commute/commute",
+    "pages/custom_made/temporary/temporary",
+    "pages/custom_made/customization/customization",
+    "pages/self_center/shop/shop"
   ],
   "tabBar": {
-    "color": "#dddddd",
-    "selectedColor": "#3cc51f",
+    "color": "#7F8389",
+    "selectedColor": "#0A0A0A",
     "borderStyle": "black",
-    "backgroudColor": "#fff",
+    "backgroudColor": "#212120",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "iconPath": "pages/icon/logo.png",
-        "selectedIconPath":"pages/icon/logo.png",
-        "text": "首页"
+        "pagePath": "pages/custom_made/custom_made",
+        "iconPath": "pages/icon/custom_made.png",
+        "selectedIconPath": "pages/icon/custom_made2.png",
+        "text": "定制服务"
       },
       {
-        "pagePath": "pages/test/test",
-        "iconPath": "pages/icon/logo.png",
-        "selectedIconPath": "pages/icon/logo.png",
-        "text": "日杂工具"
+        "pagePath": "pages/ride_assistance/ride_assistance",
+        "iconPath": "pages/icon/ride_assistance.png",
+        "selectedIconPath": "pages/icon/ride_assistance.png",
+        "text": "乘车辅助"
       },
       {
-        "pagePath": "pages/suggestion/suggestion",
-        "iconPath": "pages/icon/logo.png",
-        "selectedIconPath": "pages/icon/logo.png",
-        "text": "地图"
+        "pagePath": "pages/electronic_card/electronic_card",
+        "iconPath": "pages/icon/electronic_card.png",
+        "selectedIconPath": "pages/icon/electronic_card.png",
+        "text": "电子公交卡"
+      },
+      {
+        "pagePath": "pages/self_center/self_center",
+        "iconPath": "pages/icon/self_center.png",
+        "selectedIconPath": "pages/icon/self_center.png",
+        "text": "个人中心"
       }
     ]
   },
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black",
-    "backgroundColorBottom":"#C2C2C2",
-    "enablePullDownRefresh":true
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#1AAD19",
+    "navigationBarTitleText": "\u8f85\u52a9\u516c\u4ea4",
+    "backgroundColor": "#c5b9b9",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
   },
   "networkTimeout": {
     "request": 10000,

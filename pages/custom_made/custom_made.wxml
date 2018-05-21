@@ -1,0 +1,7 @@
+
+  <view class="custom_index" animation="{{animationData2}}" >
+    <image  bindtap="clickimg" data-id="2" class="custom_index custom_image"  src="../icon/custom_made/bus2.png"></image>
+  </view>
+  <view class="custom_index"  animation="{{animationData}}">
+      <image bindtap="clickimg" data-id="1" class="custom_index custom_image"  src="../icon/custom_made/bus1.png"></image>
+  </view>

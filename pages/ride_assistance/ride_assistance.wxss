@@ -1,0 +1,17 @@
+page {
+    background-color: #ccc;
+}
+
+input {
+    margin: 10px 10px;
+    background-color: #fff;
+}
+
+.sug_info {
+    margin: 15px 10px;
+}
+
+.map_container{
+    width: 100%;
+}
+

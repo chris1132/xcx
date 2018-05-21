@@ -1,0 +1,59 @@
+<view class="page">
+   
+   <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">出发地址:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入出发地址"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">出发时间:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="time" value="{{starttime}}" data-id="0" bindchange="bindTimeChange"> 
+                        <view class="weui-input">{{starttime}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">目的地:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入目的地"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">期望到达时间:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="time" value="{{endtime}}" start="{{starttime}}" data-id="1" bindchange="bindTimeChange">
+                        <view class="weui-input">{{endtime}}</view>
+                    </picker>
+                </view>
+            </view>
+            <!-- <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">日期</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                        <view class="weui-input">{{date}}</view>
+                    </picker>
+                </view>
+            </view> -->
+        </view>
+
+
+    <view class="page__bd">
+        <view class="weui-btn-area">
+            <button type="default" bindtap="open">ActionSheet</button>
+        </view>
+    </view>
+
+</view>

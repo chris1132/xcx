@@ -1,0 +1,76 @@
+<scroll-view scroll-y class="home_1" >
+          <view class="home_16" >
+               <view class="home_17" >
+                    <view class="home_18" >
+                         <image src="images/home/home_19_19.png" style=" width:370rpx;height:365rpx;"  border="0"   bindtap="home_19_click"  class="home_19" ></image>
+                         <view class="home_20" >
+                              <text class="home_21" >阳光之国摩尔多瓦科姆拉</text>
+                              <text class="home_22" >茨酒庄泰拉德尔维诺梅洛.</text>
+                         </view>
+                         <view class="home_23" >
+                              <text class="home_24" >￥118.00</text>
+                              <image src="images/home/shop_bike.png" style=" width:38rpx;height:34rpx;"  border="0"   bindtap="home_25_click"  class="home_25" ></image>
+                         </view>
+                    </view>
+                    <view class="home_26" >
+                         <image src="images/home/home_27_27.png" style=" width:370rpx;height:365rpx;"  border="0"   bindtap="home_27_click"  class="home_27" ></image>
+                         <view class="home_28" >
+                              <text class="home_29" >高端红酒礼盒高档烫金压</text>
+                              <text class="home_30" >纹LOGO两支装</text>
+                         </view>
+                         <view class="home_31" >
+                              <text class="home_32" >￥5800</text>
+                              <image src="images/home/shop_bike.png" style=" width:38rpx;height:34rpx;"  border="0"   bindtap="home_33_click"  class="home_33" ></image>
+                         </view>
+                    </view>
+               </view>
+               <view class="home_34" >
+                    <view class="home_35" >
+                         <image src="images/home/home_36_36.png" style=" width:370rpx;height:370rpx;"  border="0"   bindtap="home_36_click"  class="home_36" ></image>
+                         <view class="home_37" >
+                              <text class="home_38" >阳光之国摩尔多瓦科姆拉</text>
+                              <text class="home_39" >茨酒庄泰拉德尔维诺梅洛.</text>
+                         </view>
+                         <view class="home_40" >
+                              <text class="home_41" >￥118.00</text>
+                              <image src="images/home/shop_bike.png" style=" width:38rpx;height:34rpx;"  border="0"   bindtap="home_42_click"  class="home_42" ></image>
+                         </view>
+                    </view>
+                    <view class="home_43" >
+                         <image src="images/home/home_44_44.png" style=" width:370rpx;height:370rpx;"  border="0"   bindtap="home_44_click"  class="home_44" ></image>
+                         <view class="home_45" >
+                              <text class="home_46" >高端红酒礼盒高档烫金压</text>
+                              <text class="home_47" >纹LOGO两支装</text>
+                         </view>
+                         <view class="home_48" >
+                              <text class="home_49" >￥5800</text>
+                              <image src="images/home/shop_bike.png" style=" width:38rpx;height:34rpx;"  border="0"   bindtap="home_50_click"  class="home_50" ></image>
+                         </view>
+                    </view>
+               </view>
+               <view class="home_51" >
+                    <view class="home_52" >
+                         <image src="images/home/home_53_53.png" style=" width:370rpx;height:370rpx;"  border="0"   bindtap="home_53_click"  class="home_53" ></image>
+                         <view class="home_54" >
+                              <text class="home_55" >Rejoyful瑞吉福澳洲坚果</text>
+                              <text class="home_56" >夏威夷果芥末味168g澳洲</text>
+                         </view>
+                         <view class="home_57" >
+                              <text class="home_58" >￥8500</text>
+                              <image src="images/home/shop_bike.png" style=" width:38rpx;height:34rpx;"  border="0"   bindtap="home_59_click"  class="home_59" ></image>
+                         </view>
+                    </view>
+                    <view class="home_60" >
+                         <image src="images/home/home_61_61.png" style=" width:370rpx;height:370rpx;"  border="0"   bindtap="home_61_click"  class="home_61" ></image>
+                         <view class="home_62" >
+                              <text class="home_63" >不锈钢折叠多功能海马刀</text>
+                              <text class="home_64" >红酒开瓶器啤酒启瓶器经</text>
+                         </view>
+                         <view class="home_65" >
+                              <text class="home_66" >￥1500</text>
+                              <image src="images/home/shop_bike.png" style=" width:38rpx;height:34rpx;"  border="0"   bindtap="home_67_click"  class="home_67" ></image>
+                         </view>
+                    </view>
+               </view>
+          </view>
+     </scroll-view>

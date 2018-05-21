@@ -1,0 +1,25 @@
+page { 
+    text-align: center;  
+}
+.weui-badge_dot{
+  padding:.4em;
+  min-width:0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+
+/* .custom-btn
+{
+  width:15%;
+  height:10%;
+  position:fixed;
+  front-size:15px;
+  bottom:10px;
+  float:right;
+  border-radius:60px;
+  padding:.5em;
+  right:200px;
+  margin-right:20px;
+}  */

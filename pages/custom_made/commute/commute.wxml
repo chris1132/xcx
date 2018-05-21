@@ -1,0 +1,137 @@
+<view class="c-minheight wx-view_cL5DXT">
+  <view class="weui-tab">
+    <view class="weui-navbar">
+      <block wx:for="{{tabs}}" wx:key="*this">
+        <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+          <view class="weui-navbar__title">{{item}}</view>
+        </view>
+      </block>
+      <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);width:{{sliderWidth}}px"></view>
+    </view>
+  </view>
+
+</view>
+
+<view class="c-minheight wx-view_eC1Gvo" hidden='{{activeIndex==3}}'>
+  <view class="c-minheight wx-view_L1psNY">
+    <image class="wx-image_OVk1tm" mode="scaleToFill" src="../../icon/custom_made/exchange.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;" />
+  </view>
+  <view class="c-minheight wx-view_njePux">
+    <input class="c-block c-fullwidth wx-input_4S6Ikp" bindfocus="startinput" data-id="1" placeholder="中电科36所" value='{{startAddress}}' type="text" />
+  </view>
+  <view class="c-minheight wx-view_pOOF4L">
+    <input class="c-block c-fullwidth wx-input_Fote6w" bindfocus="startinput" data-id="2" placeholder="嘉兴博物馆" value='{{endAddress}}' type="text" />
+  </view>
+  <view class="c-minheight wx-view_gohr4i">
+    <view bindtap='searchResult'>
+      <image class="wx-image_1plPtY " hidden='{{initHiddenStatus}}' mode="scaleToFill" src="../../icon/custom_made/1.jpg" />
+    </view>
+    <view bindtap='cancelSearch'>
+      <image class="wx-image_1plPtY" hidden='{{resultHiddenStuts}}' mode="scaleToFill" src="../../icon/custom_made/2.png" />
+    </view>
+  </view>
+</view>
+<view class="listWrap2">
+  <view class="c-minheight wx-view_POFK6s">
+    <view class="wx-view_pOFBSt">
+      <view class="wx-view_pOFBSt" hidden='{{resultHiddenStuts}}'>
+        <navigator class="listitem-navigator3" hover-class="navigator-hover">
+          <view class="wx-view_cPj0ok2">
+            <text class="c-block c-ellipse wx-text_LS2Jup2">推荐</text>
+            <view class="c-minheight wx-view_QohGqr">
+              <view class="c-minheight wx-view_cSSmdd ">
+                <view class="weui-badge weui-badge_dot" style="margin-left: 5px;margin-right: 5px; background-color:#10e874"></view>
+              </view>
+              <view class="c-minheight wx-view_cSSmdd">
+                <view class="weui-badge weui-badge_dot" style="margin-left: 5px;margin-right: 5px;"></view>
+              </view>
+              <view class="c-minheight wx-view_JvBTW4">
+                <text class="c-block c-ellipse wx-text_TvHPc92">{{startAddress}}</text>
+                <text class="c-block c-ellipse wx-text_TvHPc92">{{endAddress}}</text>
+              </view>
+              <view class="c-minheight wx-view_SanIAE">
+                <button class="wx-button_a8m9Iy" hover-class="button-hover" size="default" type="default">
+                  ￥5购票
+                </button>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+
+      <view class="wx-view_pOFBSt" hidden='{{resultHiddenStuts}}'>
+        <view class="wx-view_pOFBSt">
+          <navigator class="listitem-navigator3" hover-class="navigator-hover">
+            <view class="wx-view_cPj0ok2">
+              <text class="c-block c-ellipse wx-text_LS2Jup2">未开通</text>
+              <view class="c-minheight wx-view_QohGqr">
+                <view class="c-minheight wx-view_cSSmdd">
+                  <view class="weui-badge weui-badge_dot" style="margin-left: 5px;margin-right: 5px; background-color:#10e874"></view>
+                </view>
+                <view class="c-minheight wx-view_cSSmdd">
+                  <view class="weui-badge weui-badge_dot" style="margin-left: 5px;margin-right: 5px;"></view>
+                </view>
+                <view class="c-minheight wx-view_JvBTW4">
+                  <text class="c-block c-ellipse wx-text_TvHPc92">{{startAddress}}</text>
+                  <text class="c-block c-ellipse wx-text_TvHPc92">{{endAddress}}</text>
+                </view>
+                <view class="c-minheight wx-view_SanIAE">
+                  <button class="wx-button_a8m9Iy" hover-class="button-hover" size="default" type="default">
+                    去定制
+                  </button>
+                </view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+      <view class="wx-view_pOFBSt" hidden='{{initHiddenStatus}}'>
+        <navigator class="listitem-navigator3" hover-class="navigator-hover">
+          <view class="wx-view_cPj0ok2">
+            <text class="c-block c-ellipse wx-text_LS2Jup2">附近</text>
+            <view class="c-minheight wx-view_QohGqr">
+              <view class="c-minheight wx-view_cSSmdd ">
+                <view class="weui-badge weui-badge_dot" style="margin-left: 5px;margin-right: 5px; background-color:#10e874"></view>
+              </view>
+              <view class="c-minheight wx-view_cSSmdd">
+                <view class="weui-badge weui-badge_dot" style="margin-left: 5px;margin-right: 5px;"></view>
+              </view>
+              <view class="c-minheight wx-view_JvBTW4">
+                <text class="c-block c-ellipse wx-text_TvHPc92">中电科36所</text>
+                <text class="c-block c-ellipse wx-text_TvHPc92">嘉兴博物馆</text>
+              </view>
+              <view class="c-minheight wx-view_SanIAE">
+                <button class="wx-button_a8m9Iy" hover-class="button-hover" size="default" type="default">
+                  ￥5购票
+                </button>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <block wx:for="{{[1,2,3,4,5]}}">
+        <view class="wx-view_pOFBSt" hidden="{{initHiddenStatus}}">
+          <navigator class="listitem-navigator3" hover-class="navigator-hover">
+            <view class="wx-view_cPj0ok2">
+              <text class="c-block c-ellipse wx-text_LS2Jup2">已购</text>
+              <view class="c-minheight wx-view_QohGqr">
+                <view class="c-minheight wx-view_GEM72E" />
+                <view class="c-minheight wx-view_cSSmdd" />
+                <view class="c-minheight wx-view_JvBTW4">
+                  <text class="c-block c-ellipse wx-text_TvHPc92">中电科36所</text>
+                  <text class="c-block c-ellipse wx-text_TvHPc92">嘉兴博物馆</text>
+                </view>
+                <view class="c-minheight wx-view_SanIAE">
+                  <button class="wx-button_a8m9Iy" hover-class="button-hover" size="default" type="default">
+                    查看
+                  </button>
+                </view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<button class="weui-btn custom-btn" style="margin-top:{{0.6*viewHeight}}px;float:right;border-radius:60px;padding:.5em;font-size:5;position:fixed;left:{{0.8*viewWidth}}px" bindtap="customizationButton" type="primary">定制</button>

@@ -1,0 +1,39 @@
+page {
+    background-color: #ccc;
+}
+
+input {
+    margin: 10px 10px;
+    background-color: #fff;
+}
+
+.section{
+  width:75%;
+  margin-left:0px;
+  margin-top:0px;
+  margin-bottom:auto;
+  left:0px;
+  right:0px;
+  top:-3px;
+  bottom:0px;
+  position:absolute;
+  display:inline-block;
+  min-height:60px;
+  height:60px;
+}
+.sure-btn {
+  width:20%;
+  position:right;
+}
+.mini-btn{
+  top:5px;
+  left:290px;
+}
+
+.map_container{
+    height: 450px;
+    width: 100%;
+    top:10px;
+    bottom:0px;
+}
+

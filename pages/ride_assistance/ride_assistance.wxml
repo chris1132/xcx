@@ -1,0 +1,5 @@
+<view class="page">
+  <view class="map_container" style="height: {{viewHeight}}px">
+    <map id="myMap" style="width: {{viewWidth}}px; height: 100%;" latitude="{{latitude}}" longitude="{{longitude}}" markers='{{markers}}' show-location="true" ></map>
+  </view> 
+</view>

@@ -1,3 +1,4 @@
+
 //app.js
 App({
   onLaunch: function () {
@@ -5,9 +6,15 @@ App({
     // var logs = wx.getStorageSync('logs') || []
     // logs.unshift(Date.now())
     // wx.setStorageSync('logs', logs)
-    var that = this;
+   
+   //读取系统宽度和高度 
+    this.readViewSize()
 
     // 获取用户设置信息
+    this.getuserInfo()
+  },
+  userInfoHandle:function(){
+    var that = this;
     wx.getSetting({
       success: res => {
         if (res.authSetting['scope.userInfo']) {
@@ -83,7 +90,19 @@ App({
       }
     })
   },
+  readViewSize: function () {
+    var that = this
+    //读取系统宽度和高度 
+    wx.getSystemInfo({
+      success: function (res) {
+        that.globalData.viewWidth = res.windowWidth
+        that.globalData.viewHeight = res.windowHeight
+      }
+    });
+  },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    viewWidth: 375,
+    viewHeight: 667
   }
 })
